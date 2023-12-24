@@ -9,7 +9,7 @@
     + Сначала получаем  OAuth-токен по ссылке https://oauth.yandex.ru/authorize?response_type=token&client_id=1a6990aa636648e9b2ef855fa7bec2fb
     + В PowerShell вставляем скрипт => получаем IAM токен
 
-$yandexPassportOauthToken = "<OAuth-токен>"
+$yandexPassportOauthToken = "<OAuth-токен>"\n
 $Body = @{ yandexPassportOauthToken = "$yandexPassportOauthToken" } | ConvertTo-Json -Compress
 Invoke-RestMethod -Method 'POST' -Uri 'https://iam.api.cloud.yandex.net/iam/v1/tokens' -Body $Body -ContentType 'Application/json' | Select-Object -ExpandProperty iamToken
 
