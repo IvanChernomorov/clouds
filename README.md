@@ -20,3 +20,11 @@ Invoke-RestMethod -Method 'POST' -Uri 'https://iam.api.cloud.yandex.net/iam/v1/t
   + В файле main js вставляем ссылку на cloud function, api ключ
 + Делаем бакет публичным, настраиваем хостинг
 + Готово. Получаем сайт - обменник валют. Использованные сервисы: cloud functions, object storage, translate
+
+### Лаба 2
++ Регаемся в vk cloud
++ Создаёи бакет в объектном хранилище
++ Заливаем туда файлы из папки currency с теми же изменениями в main js
++ Делаем доступ к файлам публичным
++ Ссылка на index.html - ссылка на сайт.
++ Готово. Использованные сервисы: cloud functions, translate из Yandex Cloud; объектное хранилище из VK cloud
