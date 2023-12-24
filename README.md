@@ -13,3 +13,7 @@ $yandexPassportOauthToken = "<OAuth-токен>"\
 $Body = @{ yandexPassportOauthToken = "$yandexPassportOauthToken" } | ConvertTo-Json -Compress\
 Invoke-RestMethod -Method 'POST' -Uri 'https://iam.api.cloud.yandex.net/iam/v1/tokens' -Body $Body -ContentType 'Application/json' | Select-Object -ExpandProperty iamToken
 
+  + IAM токен работает 12 часов, поэтому перед показом лабы его надо сгенерить заново
++ Делаем функцию публичной, копируем ссылку на неё
++ Создаём бакет (object storage)
++ Заливаем туда файлы из папки currency 
