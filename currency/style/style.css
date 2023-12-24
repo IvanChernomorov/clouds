@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@400;500;600;700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Sofia Sans Condensed", sans-serif;
+}
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background: #6f63f5;
+}
+
+.flex-line {
+	display: flex;
+}
+.flex-line .icon {
+	margin: 0 auto 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+.wrapper {
+	width: 1100px;
+	padding: 80px;
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+}
+.wrapper header {
+	font-size: 46px;
+	text-align: center;
+}
+.wrapper form {
+	margin: 40px 0 20px 0;
+}
+form :where(input, select, button) {
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+	border: none;
+}
+form input {
+	height: 50px;
+	width: 220px;
+	font-size: 24px;
+	padding: 0 15px;
+	border: 1px solid #999;
+}
+form input:focus {
+	padding: 0 14px;
+	border: 2px solid #6f63f5;
+}
+form input:disabled {
+	background-color: #fff;
+	color: #000;
+}
+form .drop-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.drop-list .select-box {
+	padding-left: 10px;
+	padding-right: 10px;
+	display: flex;
+	width: 200px;
+	height: 50px;
+	align-items: center;
+	border-radius: 5px;
+	justify-content: center;
+	border: 1px solid #999;
+}
+.select-box img {
+	max-width: 21px;
+}
+.select-box select {
+
+	font-size: 18px;
+	background: none;
+	margin: 0 -5px 0 5px;
+}
+.select-box select::-webkit-scrollbar {
+	width: 8px;
+}
+.select-box select::-webkit-scrollbar-track {
+	background: #fff;
+}
+.select-box select::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 8px;
+	border-right: 2px solid #ffffff;
+}
+.drop-list .icon {
+	margin: auto;	
+	cursor: pointer;
+	margin-top: 30px;
+	font-size: 22px;
+}
+form .exchange-rate {
+	font-size: 17px;
+	margin: 20px 0 30px;
+}
+form button {
+	height: 52px;
+	color: #fff;
+	font-size: 17px;
+	cursor: pointer;
+	background: #6f63f5;
+	transition: 0.3s ease;
+}
+form button:hover {
+	background: #594bf1;
+}

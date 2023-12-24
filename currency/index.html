@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Конвертер валют</title>
+	<link rel="stylesheet" href="style/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+	<script src='scripts/main.js' type='module' defer></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>Конвертер валют</header>
+		<form action="#">
+			<div class="flex-line">
+				<div class="amount">
+					<input type="text" value="0" id="request_ammount">
+				</div>
+				<div class="drop-list">
+					<div class="from">
+						<div class="select-box">
+							<img src="https://flagcdn.com/48x36/us.png" alt="flag">
+							<select> </select>
+						</div>
+					</div>
+				</div>
+				<div class="icon" id="swap_button">
+					<i class="fas fa-exchange-alt"></i>
+				</div>
+				<div class="amount">
+					<input type="text" id="answer_ammount" disabled>
+				</div>
+				<div class="drop-list">
+					<div class="to">
+						<div class="select-box">
+							<img src="https://flagcdn.com/48x36/ru.png" alt="flag">
+							<select> </select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+
+	</div>
+	<script src="js/country-list.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
